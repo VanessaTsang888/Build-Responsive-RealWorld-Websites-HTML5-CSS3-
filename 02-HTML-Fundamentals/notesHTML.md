@@ -1,1 +1,0 @@
-1. I am skiping section 2: HTML Fundamentals as I already know this.
