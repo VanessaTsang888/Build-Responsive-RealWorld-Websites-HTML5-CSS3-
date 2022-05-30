@@ -36,14 +36,23 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
-        /* CSS GRID */
+        /* CSS GRID. Will generate 2 columns, 1 with a width of 250px, 1 with a width of 150px */
+        display: grid;
+        /* Size the columns */
+        grid-template-columns: 200px 200px 100px 100px;
+        /* Size the rows */
+        grid-template-rows: 300px 200px;
+        /* Use gap rather than margin for space between elements. Unlike flexbox, with Grid we can define separate value for cols and rows. */
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
-        /* STARTER */
+        /* Just like flexbox the element stretch across the entire cell */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;

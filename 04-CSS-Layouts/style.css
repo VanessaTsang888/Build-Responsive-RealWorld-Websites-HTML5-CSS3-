@@ -1,7 +1,10 @@
+/* Universal Selector: apply to every element */
+
 * {
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -17,6 +20,7 @@ body {
   width: 800px;
   /* margin-left: auto;
   margin-right: auto; */
+  /* Using the short-hand to write no margin all around this element. The browser will auto figure out the margins for us.  */
   margin: 0 auto;
 }
 
@@ -82,6 +86,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -134,6 +139,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -232,7 +238,7 @@ h2 {
 }
 
 h2::before {
-  content: "TOP";
+  content: 'TOP';
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
@@ -265,3 +271,59 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/*** CSS FLOATS: use the float property to make it inline block elements using floats. ***/
+/* The other elements around it the img will float around it. Take the img out of the pages flow by using float on it. */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* The author text: Add some space between elements to see what floats do */
+
+.author {
+  margin-left: 80px;
+  float: left;
+  margin-left: 20px;
+}
+
+/* Make the nav appear to the right of the h1. The container element collapsed its height as its child elements are all floated so we ned to clear the float. */
+/*  */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* The clear fix hack will avoid having empty div's. */
+/* clear left & right. Needs some kind of content even if its empty string. Set from inline to block element. */
+/* Now floats cleared the height for h1 not colapsed. */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+/* Example project: layout the article on left, the aside on the right and the footer at the bottom.  */
+/* The total width of page is 1200px so share this between the article and aside. */
+article {
+  background-color: green;
+  width: 825px;
+  float: left;
+}
+/* Posts */
+aside {
+  background-color: red;
+  width: 300px;
+  float: right;
+  /* This should be applied to every element. */
+  box-sizing: border-box;
+}
+/* The float needs to be cleared left & right to move it to the bottom of the page. */
+footer {
+  background-color: yellow;
+  clear: both;
+}

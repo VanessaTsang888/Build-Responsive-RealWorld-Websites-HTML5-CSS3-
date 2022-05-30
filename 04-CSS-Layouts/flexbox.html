@@ -39,12 +39,29 @@
         font-size: 40px;
         margin: 40px;
 
-        /* FLEXBOX */
+        /* FLEXBOX: all child elements or flex items will float next to each other. Center items vertically. */
+        display: flex;
+        /* aligns items vertically along the main axis. Vertical alignment by default but can switch the direction of the axis.  */
+        align-items: center;
+        /* To align items along the main axis */
+        justify-content: space-between;
+        /* The default is flex-start */
+        /* justify-content: flex-start; */
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      .el--5 {
+        align-self: stretch;
       }
     </style>
   </head>
   <body>
+    <!-- flex container -->
     <div class="container">
+      <!-- flex items (chil elements ) -->
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>

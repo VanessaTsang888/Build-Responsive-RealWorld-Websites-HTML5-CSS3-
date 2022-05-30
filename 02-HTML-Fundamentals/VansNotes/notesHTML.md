@@ -103,3 +103,26 @@ The footer:
 <footer> for the copyright text.
 
 L17: A Note on Semantic HTML:
+Before HTML5 most people used <div> most of the time. Now with HTML5, we write semantic HTML.
+
+<div> is just  container.
+Elements and container elements have meaning, i.e. <nav></nav> contain element is used to group a bunch of navigation links which is important for browsers to understand what the elements are, important for SEO and accessibility - especially for people with screen readers to consue on web pages.
+Using elements may not change anything on the UI but need to understand what these elements means and what they stand for.
+Summary:
+1 -> for broswers to understand our elements/web pages;
+2 - for SEO / optimiseation;
+3 - for accessibility, i.e. people with screen readers.
+
+L18 Installing aAdditional VS Code Extensions:
+Three others to make our life easier when we code HTML and CSS.
+
+1 - Image Previous - displays small image in gutter. Can be extremely helpful sometimes.
+2 - Color Hightlight - helpfull when visualising colors in CSS.
+3 - Auto Rename Tag - when I change the opening tag, it will auto change the closing one for me. Will this work for React? I will try this out when I get to my React personal development.
+
+Go to Settings and enable the Auto Closing Tag. I've check and found that I've already done this. So when I write the opening <p> HTML is auto write the closing tag for me.
+
+4 - Live Server: I have already download this from a previous course/project. I have the 'Go Live' button on bottom-right. It will open new tab which will contain my web page. It will auto reload my web page in the UI when I make a change to my code and save it.
+On save, page will get auto updated. To stop the connection, click the Port: 5500 icon at the bottom. The port is the first couple of digits on the url. I have my own web server on my own computer running. The port is the address of my web server or the local host server.
+
+L19 Code Challenge 01:
