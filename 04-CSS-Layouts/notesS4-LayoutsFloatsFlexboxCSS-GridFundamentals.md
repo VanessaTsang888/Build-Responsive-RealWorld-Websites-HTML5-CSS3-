@@ -82,11 +82,20 @@ Flexbox is perfet for replacing floats, allowing us to write fewer and cleaner H
   box-sizing: border-box;
   }
 
-59. Intro to CSS Grid:
+55. The flex Property:
+    I've made notes in my CSS dictionary.
+
+56. Adding Flexbox to Our Project:
+    I've watched the video but not code with the instructor as yet.
+
+57. Building a Simple Flexbox Layout:
+    Continue from here.
+
+58. Intro to CSS Grid:
     very powerful compared to floats and flexbox.
     The most complete and easiest way of building layouts. Setting up a simple grid take less than a minuet.
     Use to define our 2-D layout - our column and our rows.
 
            Just like flexbox the element stretch across the entire cell, across the height and width.
 
-60. A CSS Grid Overview:
+59. A CSS Grid Overview:
