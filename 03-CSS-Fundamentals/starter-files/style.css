@@ -1,5 +1,16 @@
 /* L23 External CSS */
 
+/* Combin six selector into one list. Then apply the font-family to that list.   */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
 /* 
 A CSS Rule. 
 A declaration block with one or more declarations. Each declaration has a property name and a value we specify for that property. 
@@ -7,7 +18,6 @@ A declaration block with one or more declarations. Each declaration has a proper
 
 h1 {
   font-size: 26px;
-  font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
 }
@@ -16,32 +26,40 @@ h1 {
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
 }
 
 /* We have multiple h3 elements we can style them all using the below declaration block. */
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
 }
 
 /* Align text to center which will centre the h4 to its parent element which is the entire page in our case. */
 h4 {
   font-size: 20px;
-  font-family: sans-serif;
+  text-transform: uppercase;
   text-align: center;
 }
 
 /* Inheritance (a mechanism): since we not as yet specify the styles for the anchor, strong text and the em element, so they get the styles from the p selector/declaration block.*/
 p {
   font-size: 22px;
-  font-family: sans-serif;
   line-height: 1.5;
 }
 
 /* Style the li elements: overrides the font size of 22px from the p element, to 20px for this li elements. */
 li {
   font-size: 20px;
-  font-family: sans-serif;
+}
+
+/* Select all p elements that is inside of the footer elements. */
+
+footer p {
+  font-size: 16px;
+}
+
+/* A nested decendant selectors. Select the p element that is inside of the header that is inside of the article elements. */
+
+article header p {
+  font-size: italic;
 }
