@@ -1,6 +1,47 @@
 /* L23 External CSS */
 
-/* CSS Rule. */
+/* 
+A CSS Rule. 
+A declaration block with one or more declarations. Each declaration has a property name and a value we specify for that property. 
+*/
+
 h1 {
-  color: blue;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Te main heading of the article.  */
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+/* We have multiple h3 elements we can style them all using the below declaration block. */
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+/* Align text to center which will centre the h4 to its parent element which is the entire page in our case. */
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Inheritance (a mechanism): since we not as yet specify the styles for the anchor, strong text and the em element, so they get the styles from the p selector/declaration block.*/
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Style the li elements: overrides the font size of 22px from the p element, to 20px for this li elements. */
+li {
+  font-size: 20px;
+  font-family: sans-serif;
 }
