@@ -13,10 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of the Web: HTML</title>
     <!-- Use this stylesheet to style our html -->
-    <link
-      rel="stylesheet"
-      href="/03-CSS-Fundamentals/starter-files/style.css"
-    />
+    <link rel="stylesheet" href="/03-CSS-Fundamentals/style.css" />
   </head>
   <!-- Body element is For all elements that will be visable on the page -->
   <!-- Each page should only have one h1 heading / one primary heading which is best practice -->
@@ -45,7 +42,9 @@
           height="50"
         />
 
-        <p>Posted <strong>by Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted <strong>by Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <!-- The image element is a self closing tags with attributs to describe elements as we don't specify any content, i.e. 
     the source attribute or src then specify the image -->
         <!-- using the src attribute inside of the img tag (as we don't have content in img tags) to describe the element  -->
@@ -139,12 +138,12 @@ still need to use the li element to wrap each individual items -->
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="img/related-2.jpg" width="75" height="75" />
           <a href="#">The Unkown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -154,7 +153,7 @@ still need to use the li element to wrap each individual items -->
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
@@ -162,7 +161,7 @@ still need to use the li element to wrap each individual items -->
     <!-- no need for <p> as only one child. Use the HTML entity to write the Copyright symbol: &copy:
       write the ampersand and write copy. -->
     <footer>
-      <p>Copyright &copy; 2027 by The Code Magazine.</p>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>

@@ -58,8 +58,28 @@ footer p {
   font-size: 16px;
 }
 
-/* A nested decendant selectors. Select the p element that is inside of the header that is inside of the article elements. */
+/* 
+A nested decendant selectors. Select the p element that is inside of the header that is inside of the article elements.
+this is not best practice as the selector is long and not efficent way to select elements in css to style it.
+*/
 
-article header p {
+/* article header p {
   font-size: italic;
+} */
+
+/* Using the html ID attribute to select an element and style it. This technique of selecting and styling a unique element is best practice. */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* Using the class attribute to name an element and select that and style in csss */
+
+related-author {
+  font-size: 18px;
+  font-weight: bold;
 }
