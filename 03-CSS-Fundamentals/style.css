@@ -82,4 +82,10 @@ this is not best practice as the selector is long and not efficent way to select
 related-author {
   font-size: 18px;
   font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Style the unordered list within the Related posts section to remove the bullet points.  */
+.related {
+  list-style: none;
 }
