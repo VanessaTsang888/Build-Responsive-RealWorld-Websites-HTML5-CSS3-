@@ -9,6 +9,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 /* 
@@ -88,4 +95,21 @@ related-author {
 /* Style the unordered list within the Related posts section to remove the bullet points.  */
 .related {
   list-style: none;
+}
+
+/* Give the main page header a background color of light grey. */
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/* Give the related posts element a border top and a border bottom of the same blue */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* We can use predefined color names as well. */
+body {
+  /* background-color: blue; */
 }
