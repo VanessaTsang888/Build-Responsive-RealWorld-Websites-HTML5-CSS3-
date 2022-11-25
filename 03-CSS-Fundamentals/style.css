@@ -113,3 +113,39 @@ aside {
 body {
   /* background-color: blue; */
 }
+
+/* Select all the li from x2 unordered list and style it so it is different to the other li's */
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* We can achieve the same output but using the built-in pseudo-class to make our code more effienct - best practice. */
+
+li:first-child {
+  font-weight: bold;
+}
+
+/* Target the last child and style it. */
+li:last-child {
+  font-style: italic;
+}
+
+/* Target the second child and style it. Target every other li on the whole list -> odd or even */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* Target the first p element within article element. This is not how the first child pseudo-class 
+selector actually works as the p element is not the first child but the header element. */
+article p:first-child {
+  color: red;
+}
+
+/* Since we do have a p element as the last child this would work. */
+article p:last-child {
+  color: red;
+}
