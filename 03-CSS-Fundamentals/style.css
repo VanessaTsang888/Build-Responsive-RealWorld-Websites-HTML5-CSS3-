@@ -139,7 +139,7 @@ li:nth-child(even) {
   /* color: red; */
 }
 
-/* Target the first p element within article element. This is not how the first child pseudo-class 
+/* Misconception: this won't work. Target the first p element within article element. This is not how the first child pseudo-class 
 selector actually works as the p element is not the first child but the header element. */
 article p:first-child {
   color: red;
@@ -148,4 +148,28 @@ article p:first-child {
 /* Since we do have a p element as the last child this would work. */
 article p:last-child {
   color: red;
+}
+
+/* Styling links: the four states is LVHA: */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* Visited psedo-classes */
+a:visited {
+  color: #1098ad;
+}
+
+/* As soon as hovered by the mouse cursor */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* active psedo-class = when link has already been clicked on*/
+a:active {
+  background-color: black;
+  font-style: italic;
 }
