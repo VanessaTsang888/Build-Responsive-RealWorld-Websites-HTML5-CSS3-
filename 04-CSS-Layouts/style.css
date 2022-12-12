@@ -238,7 +238,7 @@ h2 {
 }
 
 h2::before {
-  content: 'TOP';
+  content: "TOP";
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
@@ -282,8 +282,8 @@ nav p {
 /* The author text: Add some space between elements to see what floats do */
 
 .author {
-  margin-left: 80px;
   float: left;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
@@ -303,7 +303,7 @@ nav {
 /* Now floats cleared the height for h1 not colapsed. */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: block;
 }
 
