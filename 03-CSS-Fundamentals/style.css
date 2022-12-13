@@ -1,15 +1,16 @@
 /* L23 External CSS */
 
-/* Combin six selector into one list. Then apply the font-family to that list.   */
+/* Universal selector. There is a big difference between this selecor and the body selector. */
+* {
+  /* border-top: 10px solid #1098ad; */
+}
 
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+/* Inheritance */
+body {
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -192,3 +193,9 @@ footer p {
   color: green !important;
 }
 *****/
+
+/* Inheritance */
+
+nav {
+  font-size: 18px;
+}
