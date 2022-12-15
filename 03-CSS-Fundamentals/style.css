@@ -3,6 +3,8 @@
 /* Universal selector. There is a big difference between this selecor and the body selector. */
 * {
   /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
 }
 
 /* Inheritance */
@@ -11,6 +13,35 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+}
+
+/* Give the main page header a background color of light grey. 20px of padding all around. */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+/* Inheritance */
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* Give the related posts element a border top and a border bottom of the same blue */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
 }
 
 h1,
@@ -34,12 +65,14 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 /* We have multiple h3 elements we can style them all using the below declaration block. */
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* Align text to center which will centre the h4 to its parent element which is the entire page in our case. */
@@ -53,11 +86,23 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
-/* Style the li elements: overrides the font size of 22px from the p element, to 20px for this li elements. */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* Style the li elements: overrides the font size of 22px from the p element, to 20px for this li elements. Define margin to add space between each list item. */
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* Select all p elements that is inside of the footer elements. */
@@ -98,18 +143,6 @@ related-author {
   list-style: none;
 }
 
-/* Give the main page header a background color of light grey. */
-.main-header {
-  background-color: #f7f7f7;
-}
-
-/* Give the related posts element a border top and a border bottom of the same blue */
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
 /* We can use predefined color names as well. */
 body {
   /* background-color: blue; */
@@ -148,7 +181,7 @@ article p:first-child {
 
 /* Since we do have a p element as the last child this would work. */
 article p:last-child {
-  color: red;
+  color: black;
 }
 
 /* Styling links: the four states is LVHA: */
@@ -193,9 +226,3 @@ footer p {
   color: green !important;
 }
 *****/
-
-/* Inheritance */
-
-nav {
-  font-size: 18px;
-}
