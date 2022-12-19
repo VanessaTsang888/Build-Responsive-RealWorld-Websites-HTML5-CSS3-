@@ -48,6 +48,8 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0px;
+  width: 500px;
+  height: 80px;
 }
 
 h1,
@@ -212,6 +214,12 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+/* Resize post img. */
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 /* Resolving conflicts */
