@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/* Inheritance */
+/* PAGE SECTIONS. Inheritance */
 body {
   color: #444;
   font-family: sans-serif;
@@ -51,6 +51,8 @@ aside {
   width: 500px;
   height: 80px;
 }
+
+/* SMALLER ELEMENTS */
 
 h1,
 h2,
@@ -107,6 +109,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -220,6 +223,22 @@ a:active {
 .post-img {
   width: 100%;
   height: auto;
+}
+
+/* Use the link pseudo class to style the nav links. Add margin and padding horizontally. Display is set to inline-block to make the margin-top work. */
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Set the margin-right of the last anchor link to 0 using the last-child pseudo class */
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* Resolving conflicts */
