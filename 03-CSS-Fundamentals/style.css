@@ -13,12 +13,14 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 /* Use container element inside of a div to centre elements inside of a browser. auto: will auto set by browser. */
 .container {
   width: 800px;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 /* Give the main page header a background color of light grey. 20px of padding all around. */
@@ -40,6 +42,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 /* Give the related posts element a border top and a border bottom of the same blue */
@@ -155,9 +158,9 @@ related-author {
 }
 
 /* We can use predefined color names as well. */
-body {
-  /* background-color: blue; */
-}
+/* body {
+  background-color: blue;
+} */
 
 /* Select all the li from x2 unordered list and style it so it is different to the other li's */
 /* .first-li {
@@ -180,9 +183,9 @@ li:last-child {
   color: red;
 } */
 
-li:nth-child(even) {
-  /* color: red; */
-}
+/* li:nth-child(even) {
+  color: red;
+} */
 
 /* Misconception: this won't work. Target the first p element within article element. This is not how the first child pseudo-class 
 selector actually works as the p element is not the first child but the header element. */
@@ -239,6 +242,19 @@ nav a:link {
 /* Set the margin-right of the last anchor link to 0 using the last-child pseudo class */
 nav a:link:last-child {
   margin-right: 0;
+}
+
+/* Like btn - Absolute Positioned to take element out of flow - will stay in the position of bottom right - no impact of surrounding elements. */
+button {
+  font-size: 22px;
+  padding: 20px;
+  /* cursor will change from arrow to hand icon. */
+  cursor: pointer;
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
 }
 
 /* Resolving conflicts */
