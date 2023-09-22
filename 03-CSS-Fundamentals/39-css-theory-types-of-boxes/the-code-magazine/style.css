@@ -222,7 +222,7 @@ a:active {
   font-style: italic;
 }
 
-/* Resize post img. */
+/* Resize post img. An image is inline element but they do behaves like an inline-block elements */
 .post-img {
   width: 100%;
   height: auto;
@@ -239,7 +239,7 @@ nav a:link {
   display: inline-block;
 }
 
-/* Set the margin-right of the last anchor link to 0 using the last-child pseudo class */
+/* Set the margin-right of the last anchor link to 0 using the last-child pseudo class. We are chaining a pseudo class with another pseudo class */
 nav a:link:last-child {
   margin-right: 0;
 }
