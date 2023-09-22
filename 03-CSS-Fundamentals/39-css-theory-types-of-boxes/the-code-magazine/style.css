@@ -1,0 +1,277 @@
+/* L23 External CSS */
+
+/* Universal selector. There is a big difference between this selecor and the body selector. */
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE SECTIONS. Inheritance */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+/* Use container element inside of a div to centre elements inside of a browser. auto: will auto set by browser. */
+.container {
+  width: 800px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+/* Give the main page header a background color of light grey. 20px of padding all around. */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+/* Inheritance */
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+/* Give the related posts element a border top and a border bottom of the same blue */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
+  width: 500px;
+  height: 80px;
+}
+
+/* SMALLER ELEMENTS */
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+/* 
+A CSS Rule. 
+A declaration block with one or more declarations. Each declaration has a property name and a value we specify for that property. 
+*/
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Te main heading of the article.  */
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* We have multiple h3 elements we can style them all using the below declaration block. */
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Align text to center which will centre the h4 to its parent element which is the entire page in our case. */
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Inheritance (a mechanism): since we not as yet specify the styles for the anchor, strong text and the em element, so they get the styles from the p selector/declaration block.*/
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* Style the li elements: overrides the font size of 22px from the p element, to 20px for this li elements. Define margin to add space between each list item. */
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Select all p elements that is inside of the footer elements. */
+
+footer p {
+  font-size: 16px;
+}
+
+/* 
+A nested decendant selectors. Select the p element that is inside of the header that is inside of the article elements.
+this is not best practice as the selector is long and not efficent way to select elements in css to style it.
+*/
+
+/* article header p {
+  font-size: italic;
+} */
+
+/* Using the html ID attribute to select an element and style it. This technique of selecting and styling a unique element is best practice. */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* Using the class attribute to name an element and select that and style in csss */
+
+related-author {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Style the unordered list within the Related posts section to remove the bullet points.  */
+.related {
+  list-style: none;
+}
+
+/* We can use predefined color names as well. */
+/* body {
+  background-color: blue;
+} */
+
+/* Select all the li from x2 unordered list and style it so it is different to the other li's */
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* We can achieve the same output but using the built-in pseudo-class to make our code more effienct - best practice. */
+
+li:first-child {
+  font-weight: bold;
+}
+
+/* Target the last child and style it. */
+li:last-child {
+  font-style: italic;
+}
+
+/* Target the second child and style it. Target every other li on the whole list -> odd or even */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* Misconception: this won't work. Target the first p element within article element. This is not how the first child pseudo-class 
+selector actually works as the p element is not the first child but the header element. */
+article p:first-child {
+  color: red;
+}
+
+/* Since we do have a p element as the last child this would work. */
+article p:last-child {
+  color: black;
+}
+
+/* Styling links: the four states is LVHA: */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* Visited psedo-classes */
+a:visited {
+  color: #1098ad;
+}
+
+/* As soon as hovered by the mouse cursor */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* active psedo-class = when link has already been clicked on*/
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resize post img. */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Use the link pseudo class to style the nav links. Add margin and padding horizontally. Display is set to inline-block to make the margin-top work. */
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Set the margin-right of the last anchor link to 0 using the last-child pseudo class */
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* Like btn - Absolute Positioned to take element out of flow - will stay in the position of bottom right - no impact of surrounding elements. */
+button {
+  font-size: 22px;
+  padding: 20px;
+  /* cursor will change from arrow to hand icon. */
+  cursor: pointer;
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+/* Resolving conflicts */
+/****
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+// Instead of using this hack we should write simplier selectors.
+footer p {
+  color: green !important;
+}
+*****/
