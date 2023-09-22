@@ -6,21 +6,23 @@
 
 body {
   font-family: sans-serif;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
+/* PRODUCT */
 /* Centre the article inside of the browser  */
 .product {
   border: 4px solid black;
-  width: 825px;
-  margin: 50px auto;
+  /* width: 825px;
+  margin: 50px auto; */
 }
 
+/* Background in light grey colour. */
 .product-title {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  background-color: #f7f7f7;
+  background-color: #f7f7f7; 
   padding: 15px;
 }
 
@@ -39,6 +41,12 @@ body {
 }
 
 /*  Style the link states. Always specify all four states */
+.more-info {
+  display: block;
+  margin-top: 1rem;
+}
+
+/* we use the link pseudo class as the element has href prop. */
 .more-info:link,
 .more-info:visited {
   color: black;
@@ -69,11 +77,13 @@ body {
 }
 
 /* BUTTON */
+/* The cursor prop is a hand icon when a user hover over the button element. */
 .add-cart {
   background-color: #000;
   border: none;
   color: #fff;
   font-size: 20px;
+  text-align: left;
   text-transform: uppercase;
   cursor: pointer;
   padding: 15px;
@@ -81,6 +91,7 @@ body {
   border-top: 4px solid black;
 }
 
+/* Set the hover pseudo class to invert the colours. We can do this as this is a button element. */
 .add-cart:hover {
   color: #000;
   background-color: #fff;
